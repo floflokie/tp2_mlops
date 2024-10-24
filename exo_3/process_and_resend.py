@@ -10,4 +10,4 @@ for message in consumer:
     data = np.array(message_load['data'])
     data_sum = np.sum(data)
     data_sum_str = str(data_sum)
-    producer.send('processed', data_sum_str.encode())
+    producer.send('processed_florine_kieraga', data_sum_str.encode())
